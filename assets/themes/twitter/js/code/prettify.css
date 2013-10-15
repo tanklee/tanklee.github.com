@@ -36,18 +36,20 @@ li.L1, li.L3, li.L5, li.L7, li.L9{background:#111;}
 }
 */
 
-.com { color: rgb(45, 68, 248); }
-.kwd { color: rgb(248, 6, 219);  }
+.com { color: rgb(45, 68, 248);font-style:italic;}
+.kwd { color: rgb(163, 21, 21);font-weight:bold; }
+.typ {color: teal;font-weight:bold;}
 .lit { color: #195f91; }
 .pun, .opn, .clo { color: #93a1a1; }
 .fun { color: #dc322f; }
 .str, .atv { color: #D14; }
-.linenums,.tag { color: #1e347b; }
-.typ, .atn, .dec, .var { color: teal; }
+.linenums{ color: #1e347b; }
+.tag { color: #1e347b;font-weight:bold;}
+.atn, .dec, .var { color: teal; }
 .pln { color: #48484c; }
 
 /* Put a border around prettyprinted code snippets. */
-pre.prettyprint { padding: 2px; width: auto; overflow: auto; max-height:600px}
+pre.prettyprint { padding: 2px; overflow: auto;}
 
 .prettyprint {
   padding: 8px;
@@ -77,14 +79,14 @@ padding: 3px;
 margin: 0 0 9px;
 color: inherit;
 line-height: 6px;
-font-size: 12px;
-font-family: Menlo, Monaco, "Courier New", monospace;
+font-size: 14px;
+font-family: Consolas,"Courier New",sans-serif,Menlo, Monaco,monospace;
 }
 
 code, pre {
   padding: 0 3px 2px;
-  font-family: Menlo, Monaco, "Courier New", monospace;
-  font-size: 12px;
+  font-family: Consolas, Menlo, Monaco, "Courier New", monospace;
+  font-size: 14px;
   color: #333333;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -99,7 +101,7 @@ pre {
   display: block;
   padding: 3px;
   margin: 0 0 9px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 6px;
   background-color: #f5f5f5;
   border: 1px solid #ccc;
@@ -107,10 +109,6 @@ pre {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  white-space: pre;
-  white-space: pre-wrap;
-  word-break: break-all;
-  word-wrap: break-work;
 }
 pre.prettyprint {
   margin-bottom: 18px;
