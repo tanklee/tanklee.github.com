@@ -15,6 +15,13 @@
       <br>
       </p>
       {% endif %}
+      
+      {% if page.description %}
+      <p>
+      {{ page.description }}
+      </p>
+      {% endif %}
+      
 
       {{ content }}</div>
 
@@ -74,7 +81,7 @@ var jiathis_config={
   
   <div class="span4">
    <h4>发布日期</h4>
-    <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
+    <div class="date"><span>{{ page.date | date: '%Y-%m-%d' }}</span></div>
     
      <br>
      <br>

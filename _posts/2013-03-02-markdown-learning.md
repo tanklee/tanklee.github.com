@@ -1,18 +1,14 @@
 ---
 layout: post
 title: "Markdown简介"
-description: "markdown语法介绍，markdown语法实例"
-category: "markdown"
+description: "Markdown是一个将文本转化为HTML的工具。简单来说，Markdown是一个兼顾可读性与易用性的轻量级标记体系。Markdown并不追求大而全，它只关心HTML里最常用的几个标记，对于一些不常用的标记它允许直接将HTML标记插入文本。"
+category: "jekyll"
 tags: [markdown]
 ---
 {% include JB/setup %}
 
 - - - 
 
-## 什么是Markdown
-Markdown是一个将文本转化为HTML的工具。简单来说，Markdown是一个兼顾可读性与易用性的轻量级标记体系。Markdown并不追求大而全，它只关心HTML里最常用的几个标记，对于一些不常用的标记它允许直接将HTML标记插入文本。
-
-- - - 
 
 ## 标题
 Markdown提供了两种方式（Setext和Atx）来显示标题。
