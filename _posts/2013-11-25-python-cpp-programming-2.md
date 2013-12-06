@@ -3,7 +3,7 @@ layout: post
 title : C++和Python混合编程 - C++写python扩展
 description : 早就听说过了对于复杂的系统一般会结合多种语言进行开发，最近摸索了下C++和Python混合编程，在此总结一下，做为笔记。 
 category : C/C++
-tags : [C/C++, python, Boost]
+tags : [C/C++, Python, Boost]
 ---
 {% include JB/setup %}
 
