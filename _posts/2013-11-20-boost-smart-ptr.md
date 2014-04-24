@@ -309,8 +309,8 @@ shared_ptr通过引用计数来管理资源的生存期，多个智能指针对�
 
 weak_ptr做为资源的观察者，并不具备所有权，所有不能直接访问资源，这也是为什么weak_ptr并不重载* -》运算符的原因，因为访问的是不安全的，它没有引用计数，资源生存期无法控制。但是最终我们还是想访问的，就还得要与shared_ptr 合作了，把weak_ptr转换成shared_ptr就可以访问了，转换的方有两种
 
-	* weak_ptr传给shared_ptr构造函数shared_ptr()(const weak_ptr<T>& r)
-	* weak_ptr成员函数 shared_ptr<T> lock()
+	* weak_ptr传给shared_ptr构造函数`shared_ptr()(const weak_ptr<T>& r)`
+	* weak_ptr成员函数 `shared_ptr<T> lock()`
 
 区别在于是否把空的weak_ptr当做一种错误，第一种方式，构造函数会抛出一个bad_weak_ptr类型异常，第二种会返回一个空的shared_ptr
 
