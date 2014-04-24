@@ -9,10 +9,10 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : 小小程序匠
+title : Simple is beautiful
 url: http://tanklee.github.com/
 feed: /atom.xml
-tagline: 记录小小程序匠的编程生活
+tagline: 记录那些年写过的程序
 author :
   name : brionas
   email : briontechas@gmail.com

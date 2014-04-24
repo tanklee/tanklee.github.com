@@ -7,8 +7,6 @@ tags: [markdown]
 ---
 {% include JB/setup %}
 
-- - - 
-
 
 ## 标题
 Markdown提供了两种方式（Setext和Atx）来显示标题。
