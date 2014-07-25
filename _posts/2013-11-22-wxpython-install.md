@@ -10,8 +10,9 @@ tags: [Python, wxWidgets]
 ##一、Windows下安装
 
 Windows下安装比较简单:
-* 安装python(我这里是python2.7)
-* 安装对应版本的wxPython(我的是wxPython2.8-win32-unicode-py27)
+* 安装python(我这里是python2.7.4.msi)
+* 安装对应版本的wxPython(我的是wxPython2.8-win32-unicode-2.8.12.1-py27)
+* 安装wxPython的demo和doc(wxPython2.8-win32-docs-demos-2.8.12.1.exe) 
 
 装好后wxpython出现在python包目录中E:\Python27\Lib\site-packages\wx-2.8-msw-unicode,用python 引入包import wx来写GUI程序，
 差不多了，`python  demo.py`跑跑内带的demo看看，可以发现wxPython有丰富的ui 元素
@@ -32,23 +33,21 @@ Linux下要稍微复杂些：
 
 下载wxGTK-2.8.12.tar.gz解压后在其目录下建立bld文件夹，然后运行configure：
 
-    mkdir bld
-    cd bld
-    ../configure --prefix=/opt/wx/2.8 \
+    ../configure --prefix=/home/tanli/local/wxWidget-2.8.12 \
                  --with-gtk \
-                 --with-gnomeprint 
-                 --with-opengl 
-                 --enable-debug 
-                 --enable-geometry 
-                 --enable-graphics_ctx 
-                 --enable-sound --with-sdl 
-                 --enable-mediactrl 
-                 --enable-display 
-                 --disable-debugreport 
-                 --enable-unicode 
-                 --with-libjpeg=builtin 
-                 --with-libpng=builtin 
-                 --with-libtiff=builtin 
+                 --with-gnomeprint \
+                 --with-opengl \
+                 --enable-debug \
+                 --enable-geometry \
+                 --enable-graphics_ctx \
+                 --enable-sound --with-sdl \
+                 --enable-mediactrl \
+                 --enable-display \
+                 --disable-debugreport \
+                 --enable-unicode \
+                 --with-libjpeg=builtin \
+                 --with-libpng=builtin \
+                 --with-libtiff=builtin \
                  --with-zlib=builtin 
 
 (--enable-mediactrl ,可能有个链接错误，可以去掉)
@@ -57,31 +56,31 @@ Linux下要稍微复杂些：
 
 制作一个脚本，内容如下：
 
-    make $* \
-        && make -C contrib/src/gizmos $* \ 
-        && make -C contrib/src/stc $* \
+    make $*
+    make -C contrib/src/gizmos $*
+    make -C contrib/src/stc $*
 
 命名为 .make ， 放到bld目录下
 然后运行：
 
-    .make
-    .make install
+    $./.make
+    $./.make install
  
 (3)安装wxPython：
 
 下载 wxpython: http://downloads.sourceforge.net/wxpython/wxPython-src-2.8.12.1.tar.bz2
 解压，然后在它的wxPython目录里运行：
 
-    python setup.py build_ext --inplace --debug WX_CONFIG=/opt/wx/2.8/bin/wx-config
+    python setup.py build_ext --inplace --debug WX_CONFIG=/home/tanli/local/wxWidget-2.8.12/bin/wx-config
 
-WX_CONFIG=/opt/wx/2.8/bin/wx-config 中的路径为configure时设置的路径
+WX_CONFIG=/home/tanli/local/wxWidget-2.8.12/bin/wx-config 中的路径为configure时设置的路径
 
 (4)设置环境变量：
 
-    export LD_LIBRARY_PATH=/opt/wx/2.8/lib
-    export PYTHONPATH=/usr/local/wxPython-2.8.3.0/wxPython
+    export LD_LIBRARY_PATH=/home/tanli/local/wxWidget-2.8.12/lib
+    export PYTHONPATH=/home/tanli/local/wxPython-src-2.8.12.1/wxPython
 
-我将wxPython的源码文件夹copy到了/usr/local/ 下，所以第二项是这样
+我将wxPython的源码文件夹copy到了~/local下，所以第二项是这样
 最后将以上两项添加道home目录下的.bashrc中，以后用起来方便点
 
 
