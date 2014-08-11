@@ -8,6 +8,7 @@ tags : [C/C++, Python, Boost]
 {% include JB/setup %}
 
 对于C++和python混合编程实际上包含两部分内容：
+
 * 用C++写python扩展（extending）: 即所谓的在python中调用C/C++代码，一般用于对效率要求高核心模块用C/C++编写，通过一些处理后生成动态库如cppmod.so,然在python代码中import cppmod，即可调用C/C++
 * python脚本嵌入到C++程序中(embedding): 即所谓的C++代码调用python,C++ app要嵌入python解析器从而调用python代码
 

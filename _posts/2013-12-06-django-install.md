@@ -1,6 +1,6 @@
 ---
 layout: post
-title : 玩玩Django - 入门篇
+title : Django学习 - 入门篇
 description : 项目中一些工具需要提供web接口，所以抽时间看了看web开发, 好久之前在学校的时候接触过ASP, PHP ，但感觉太过繁琐，要自己设计前台页面和又要处理后台逻辑然后又代码又混在一起。显然，对于我们这种非专业web开发的人员的快速的开发需求，还有需要借组强大web开发框架的。看了下框架很多很多，有基于PHP的，也有基于python的。Diaogo就是这么一个很火的Python web 框架，之前的项目组用到的开源工具Review board, OSQA都是基于Diango开发的，自己也凭着感觉简单改过些源码，看来是时候看看Diango了，那么就从环境搭建开始吧。
 category : Python
 tags : [Python]
