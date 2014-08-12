@@ -241,13 +241,13 @@ object上的操作，不再关心数据库中的具体存储，那是框架该�
 ##七、创建模板
 创建显示出版商的页面模板publisherlist.html
 
+
     <ul>
-    {% for publisher in publishers %}
-
-      <li> {{publisher.name}} </li>
-
-    {% endfor %}
+        { % for publisher in publishers % }
+            <li> { { publisher.name } } </li>
+        { % endfor % }
     </ul>
+
 
 修改项目配置文件指定自动加载目录
 
