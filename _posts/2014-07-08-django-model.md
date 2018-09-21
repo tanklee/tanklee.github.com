@@ -201,7 +201,7 @@ validate 命令检查你的模型的语法和逻辑是否正确。 如果一切�
     rs defined.
     Would you like to create one now? (yes/no): yes
     Username (leave blank to use 'tanli'): admin
-    Email address: tank.li@asml.com
+    Email address: tankleehust@gmail.com
     Password:
     Password (again):
     Superuser created successfully.
